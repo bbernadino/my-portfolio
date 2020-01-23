@@ -1,0 +1,41 @@
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.options {
+  width: 50%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+.option {
+  padding: 10px 15px;
+  cursor: pointer;
+
+}

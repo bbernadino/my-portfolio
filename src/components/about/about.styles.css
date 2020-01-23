@@ -1,0 +1,60 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+
+.about-content {
+  width: 85%;
+  background: white;
+  /* opacity: 0.6; */
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .about-content:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+} */
+
+.about-heading {
+  margin-bottom: 25px;
+  padding: 0;
+  border-bottom: 8px solid black;
+}
+
+.about-img {
+  width: 180px;
+  height: 180px;
+  background-image: url('https://scontent-lax3-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/43536314_1949789145325537_6892256009564421096_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com&_nc_cat=101&_nc_ohc=y9wlYvItldEAX_HYPIy&oh=291ee52261851364a71fc0f1f1428ce4&oe=5EC79A65');
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  border: 3px solid #282c34;
+  box-shadow: 0px 10px 33px 0px rgba(0,0,0,0.43);
+}
+
+.about-info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px;
+}
+
+.about-info h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.about-button {
+  margin-bottom: 25px;
+}
