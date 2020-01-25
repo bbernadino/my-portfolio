@@ -18,15 +18,10 @@
   align-items: center;
 }
 
-/* .about-content:hover {
-  opacity: 1;
-  transition: opacity 0.2s ease-out;
-} */
-
 .about-heading {
   margin-bottom: 25px;
   padding: 0;
-  border-bottom: 8px solid black;
+  border-bottom: 5px solid black;
 }
 
 .about-img {

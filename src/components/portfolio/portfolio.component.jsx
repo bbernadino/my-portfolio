@@ -2,36 +2,65 @@ import React from 'react';
 
 import './portfolio.styles.css';
 
-import CustomButton from '../custom-button/custom-button';
+import PortfolioBox from '../portfolio-box/portfolio-box.component';
 
-const Portfolio = () => (
-  <div className='portfolio-container'>
-    <div className='portfolio-content'>
-      <div className='portfolio-header'>
-        <h3>MY SERVICES</h3>
-      </div>
-      <div className='boxes'>
-        <div className='box'>
-          <div className='box-img1' />
-          <div className='box-info'>
-            <h4>Front End Web Design</h4>
-            <div className='box-button'>
-              <CustomButton>Web Dev</CustomButton>
-            </div>
+class Portfolio extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      items: [{
+        title: 'Front End Web Design',
+        imageUrl: 'https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        buttonName: 'Web Dev',
+        id: 1
+      },
+      {
+        title: 'iOS/Android App UI Design',
+        imageUrl: 'https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+        buttonName: 'App Dev',
+        id: 2
+      }]
+    };
+  }
+
+  render() {
+    return (
+      <div className='portfolio-container'>
+        <div className='portfolio-content'>
+          <div className='portfolio-header'>
+            <h2>MY SERVICES</h2>
+          </div>
+          <div className='boxes'>
+            {
+              this.state.items.map(({ id, ...otherItemsProps }) => (
+                <PortfolioBox key={id} {...otherItemsProps} />
+              ))
+            }
           </div>
         </div>
-        <div className='box'>
-          <div className='box-img2' />
-          <div className='box-info'>
-            <h4>iOS/Android App UI Design</h4>
-            <div className='box-button'>
-              <CustomButton>App Dev</CustomButton>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 export default Portfolio;
+
+// import React from 'react';
+
+// import './portfolio.styles.css';
+
+// import PortfolioBox from '../portfolio-box/portfolio-box.component';
+
+// const Portfolio = () => (
+  // <div className='portfolio-container'>
+  //   <div className='portfolio-content'>
+  //     <div className='portfolio-header'>
+  //       <h3>MY SERVICES</h3>
+  //     </div>
+  //     <PortfolioBox />
+  //   </div>
+  // </div>
+// );
+
+// export default Portfolio;
