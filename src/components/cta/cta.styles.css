@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
 }
 
 .cta-img {
@@ -19,8 +19,8 @@
 
 .cta-content {
   z-index: 5;
+  height: 75%;
   width: 85%;
-  height: 80%;
   background: white;
   /* opacity: 0.6; */
   border: 3px solid black;
