@@ -45,22 +45,3 @@ class Portfolio extends React.Component {
 }
 
 export default Portfolio;
-
-// import React from 'react';
-
-// import './portfolio.styles.css';
-
-// import PortfolioBox from '../portfolio-box/portfolio-box.component';
-
-// const Portfolio = () => (
-  // <div className='portfolio-container'>
-  //   <div className='portfolio-content'>
-  //     <div className='portfolio-header'>
-  //       <h3>MY SERVICES</h3>
-  //     </div>
-  //     <PortfolioBox />
-  //   </div>
-  // </div>
-// );
-
-// export default Portfolio;
